@@ -47,6 +47,13 @@
     
 }
 
+.menuInicial li:hover {
+    height: 200px; width: 200px;
+   padding: 10px;
+   background-color: #7e4d37;
+   font-size: 20px;
+}
+
 
 
 .mainIndex{

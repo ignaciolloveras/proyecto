@@ -93,12 +93,16 @@
     grid-area: review;
     display: flex;
     flex-direction: row;
+    margin: 15px;
+
 }
+
 
 .reviewUno{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     grid-area: rU;
 }
 

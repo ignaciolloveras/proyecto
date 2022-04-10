@@ -91,6 +91,8 @@
 
 .review{
     grid-area: review;
+    display: flex;
+    flex-direction: row;
 }
 
 .reviewUno{

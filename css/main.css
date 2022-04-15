@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.body, .bodyIndex, .bodyServicios {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+       
+}
+
+
+/*Propiedades del header*/
+
+.header{
+   background-image: url(../Imagenes/banner5.png );
+   background-repeat: repeat;
+   background-position: center;
+   background-size: contain;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   grid-area: he;
+    
+}
+
+.header h1{
+    font-size: 30px;
+    font-style: bold ;
+    color: black;
+    font-weight: bold;
+    text-shadow: 0 0 10px #4D3930
+    
+}
+
+.logoFrola{
+    margin: 10px;
+}
+
+.menuInicial li{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    background-color:#DEE1DF
+    
+}
+
+.menuInicial li:hover {
+    height: 200px; width: 200px;
+   padding: 10px;
+   background-color: #7e4d37;
+   font-size: 20px;
+}
+
+
+
+.mainIndex{
+    padding: 30px;
+    grid-area: mainindex;
+    
+}
+
+.recuadroEntrada{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 15px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    grid-area: re;
+}
+
+.tituloEntrada{
+    text-align: center;
+    margin: 15px;
+    text-decoration: underline;
+}
+
+.notaEntrada{
+    width: 90%;
+    height: 90%;
+    padding: 20px 20px;  
+    margin: auto;
+    grid-area: auto;
+      
+}
+
+.review{
+    grid-area: review;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+
+}
+
+
+.reviewUno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: rU;
+}
+
+.reviewDos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: rD;
+}
+
+.reviewTres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: rT;
+}
+
+.reviewCuatro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: rC;
+}
+
+.reviewCinco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: rCi;
+}
+
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+.notaEntrada img{
+    float: left;
+    margin-right: 15px;
+}
+
+.servicios li{
+    padding: 5px;
+    margin: 5px;
+    list-style: none;
+}
+
+/*propiedades del footer*/
+
+.footer{
+    background-color:#7e4d37 ;
+    height: auto;
+    width: 100%;
+    bottom: 10px;
+    display: inline-block;
+    grid-area: fo;
+
+}
+
+
+.redSociales{
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+.bodyIndex{
+    height: 80vh;
+    display: grid;
+    grid-template-areas:"he"
+                        "mainindex"
+                        "review"
+                        "fo";
+    justify-content: center;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+/*css de servicios*/
+
+h4{
+    text-align: center;
+    display: none;
+}
+
+.mainServicios{
+    grid-area: ms ;
+}
+
+.bodyServicios{
+    display: grid;
+    grid-template-areas:"he"
+                        "ms"
+                        "ms"
+                        "ms"
+                        "ms"
+                        "fo" ;
+}
+
+
+@media only screen and (min-width:1024px){
+
+    .header h1{
+        font-size: 50px;
+    }
+
+    .review{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mainServicios{
+        display: grid;   
+    }
+
+    .servicios{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+
+    }
+
+    .header{
+        align-items: flex-end
+         
+     }
+
+    h4{
+        display: block;
+    }
+
+    .menuInicial li{
+        display: inline;        
+    }
+
+}
+
+
+
+
+
+/*
+#596368,#4D3930,#DEE1DF,#596368,#4D3930,#DEE1DF,#596368,#4D3930
+*/

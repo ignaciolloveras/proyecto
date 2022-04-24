@@ -8,7 +8,7 @@ body {
   height: 100vh; }
 
 header {
-  background-image: url(../Imagenes/banner5.png);
+  background-color: whitesmoke;
   background-repeat: repeat;
   background-position: center;
   background-size: contain;
@@ -17,7 +17,7 @@ header {
   align-items: center;
   grid-area: he; }
   header h1 {
-    font-size: 30px;
+    font-size: 20px;
     font-style: bold;
     color: black;
     font-weight: bold;
@@ -25,16 +25,15 @@ header {
   header img {
     margin: 10px; }
   header nav ul li {
+    color: black;
     display: flex;
     flex-direction: column;
     padding: 5px;
     margin: 5px;
     background-color: #DEE1DF; }
     header nav ul li:hover {
-      height: 200px;
-      width: 200px;
       padding: 10px;
-      background-color: #7e4d37;
+      background-color: whitesmoke;
       font-size: 20px; }
 
 Footer {
@@ -169,6 +168,16 @@ Footer {
 
 }
 
+.derechosFooter{
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  color:#DEE1DF
+}
+
 /*css de servicios*/
 
 h4{
@@ -177,6 +186,8 @@ h4{
 }
 
 .mainServicios{
+  margin: 10px;
+  padding: 10px;
   grid-area: ms ;
 }
 
@@ -190,6 +201,17 @@ h4{
                       "fo" ;
 }
 
+.mainUbicacion{
+  padding: 50px;
+}
+
+.mainNosotros{
+  padding: 50px;
+}
+
+.mainContacto{
+  padding: 50px;
+}
 
 @media only screen and (min-width:1024px){
 
@@ -216,8 +238,7 @@ h4{
 
   .header{
       align-items: flex-end
-       
-   }
+    }
 
   h4{
       display: block;
@@ -251,7 +272,7 @@ h4{
   width: 3px;
   background-color: #000;
   left: 50%;
-  height: 100%;
+  height: 94%;
   border-radius: 10px;
 }
 

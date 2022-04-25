@@ -4,13 +4,26 @@
     box-sizing: border-box;    
 }
 
+$colores:(
+    primario: whitesmoke,
+    Secundario: #7e4d37,
+);
+
+@mixin review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     height: 100vh;
 }
 
 header{
-    background-color: whitesmoke;
+    background-color: map-get($map: $colores, $key:primario );
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -37,7 +50,7 @@ header{
             background-color:#DEE1DF;
             &:hover{
                 padding: 10px;
-                background-color: whitesmoke;
+                background-color: map-get($map: $colores, $key:primario );
                 font-size: 20px;
            }
        }
@@ -45,7 +58,7 @@ header{
 }}
 
 Footer{
-    background-color:#7e4d37 ;
+    background-color:map-get($map: $colores, $key:Secundario ) ;
     height: auto;
     width: 100%;
     bottom: 10px;
@@ -118,38 +131,27 @@ Footer{
         flex-direction: row;
         margin: 15px;
         .reviewUno{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include review;
             grid-area: rU;
         }
           
         .reviewDos{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include review;
             grid-area: rD;
         }
           
         .reviewTres{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include review;
             grid-area: rT;
         }
           
         .reviewCuatro{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include review;
             grid-area: rC;
         }
           
         .reviewCinco{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include review;
             grid-area: rCi;
         }
     }

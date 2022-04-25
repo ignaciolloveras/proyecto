@@ -128,11 +128,6 @@ Footer {
 }
 
 
-.img{
-  display: flex;
-  justify-content: center;
-}
-
 .notaEntrada img{
   float: left;
   margin-right: 15px;
@@ -154,19 +149,7 @@ Footer {
   justify-content: center;
 }
 
-.review{
-  display: flex;
-  flex-direction: column;
-}
 
-.servicios{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-
-}
 
 .derechosFooter{
   font-weight: bold;
@@ -179,6 +162,15 @@ Footer {
 }
 
 /*css de servicios*/
+
+.servicios{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
 
 h4{
   text-align: center;

@@ -128,7 +128,7 @@ Footer{
     .review{
         grid-area: review;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin: 15px;
         .reviewUno{
             @include review;
@@ -158,6 +158,18 @@ Footer{
 }
 
 .bodyServicios{
+    .tituloEntrada{
+        text-align: center;
+        margin: 15px;
+        text-decoration: underline;
+    }
+    ul{
+        li{
+            padding: 5px;
+            margin: 5px;
+            list-style: none;
+         }
+    }
     h4{
         text-align: center;
         display: none;
@@ -178,6 +190,11 @@ Footer{
 }
 
 //agregar los mains faltantes
+
+.mainUbicacion{
+    padding: 50px;
+  }
+
 
 .linea-tiempo {
     position: relative;
@@ -265,11 +282,16 @@ Footer{
         font-size: 50px;
     }
   
-    .review{
-        display: flex;
-        flex-direction: row;
+    .bodyIndex{
+        .mainIndex{
+            .review{
+                display: flex;
+                flex-direction: row;
+            } 
+        }
+        
     }
-  
+    
     .mainServicios{
         display: grid;   
     }

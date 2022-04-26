@@ -215,7 +215,7 @@ Footer {
 @media only screen and (min-width: 1024px) {
   .header h1 {
     font-size: 50px; }
-  .bodyIndex .mainIndex .review {
+  .bodyIndex .review {
     display: flex;
     flex-direction: row; }
   .mainServicios {

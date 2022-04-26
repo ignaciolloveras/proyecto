@@ -281,17 +281,14 @@ Footer{
     .header h1{
         font-size: 50px;
     }
-  
-    .bodyIndex{
-        .mainIndex{
-            .review{
-                display: flex;
-                flex-direction: row;
-            } 
-        }
-        
-    }
     
+    .bodyIndex{
+        .review {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
     .mainServicios{
         display: grid;   
     }

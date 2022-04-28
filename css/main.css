@@ -31,6 +31,9 @@ header {
       padding: 10px;
       background-color: whitesmoke;
       font-size: 20px; }
+    header nav ul li a {
+      text-decoration: none;
+      color: black; }
 
 Footer {
   background-color: #7e4d37;
@@ -137,6 +140,13 @@ Footer {
     margin: 10px;
     padding: 10px;
     grid-area: ms; }
+
+.mainNosotros {
+  padding: 30px; }
+  .mainNosotros .tituloEntrada {
+    text-align: center;
+    margin: 15px;
+    text-decoration: underline; }
 
 .mainUbicacion {
   padding: 50px; }

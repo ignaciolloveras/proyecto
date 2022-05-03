@@ -13,6 +13,8 @@ header {
   justify-content: space-between;
   align-items: center;
   grid-area: he; }
+  header .logoFrola {
+    width: 300px; }
   header h1 {
     font-size: 20px;
     font-style: bold;
@@ -148,6 +150,30 @@ Footer {
     margin: 15px;
     text-decoration: underline; }
 
+.mainContacto {
+  padding: 50px;
+  margin-bottom: 40px; }
+  .mainContacto .tituloEntrada {
+    text-align: center;
+    margin: 15px;
+    text-decoration: underline; }
+  .mainContacto p {
+    font-size: 20px; }
+  .mainContacto .recuadroEntrada {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 15px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    align-items: center; }
+  .mainContacto .campoFormulario {
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px; }
+
 .mainUbicacion {
   padding: 50px; }
 
@@ -225,6 +251,8 @@ Footer {
 @media only screen and (min-width: 1024px) {
   .header h1 {
     font-size: 50px; }
+  .header .logoFrola {
+    width: 150px; }
   .bodyIndex .review {
     display: flex;
     flex-direction: row; }
@@ -239,4 +267,6 @@ Footer {
   h4 {
     display: block; }
   .menuInicial li {
-    display: inline; } }
+    display: inline; }
+    .menuInicial li img {
+      width: 50px; } }

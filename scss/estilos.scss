@@ -60,6 +60,7 @@ header{
             padding: 5px;
             margin: 5px;
             background-color: #DEE1DF;
+            
             &:hover{
                 background-color: map-get($map: $colores, $key:primario );
                 font-size: 10px;
@@ -143,7 +144,7 @@ Footer{
     section{
         .review{
             grid-area: review;
-            display: flex;
+            display:flex;
             flex-direction: column;
             margin: 15px;
             
@@ -330,14 +331,13 @@ Footer{
 
     .header{
         display: flex;
+        align-items: flex-end;
         h1{
           font-size: 50px;
         }
         .logoFrola{
             width: 150px;
-        }
-        align-items: flex-end
-        }
+        }       
   
         h4{
         display: block;
@@ -345,7 +345,6 @@ Footer{
   
         .menuInicial li{
         display: inline;
-        flex-direction: column;
         padding: 5px;
         margin: 5px;
         background-color:#DEE1DF;
@@ -359,15 +358,18 @@ Footer{
          color: black;
          font-size: 1rem;
          margin: 2px;
-         }
+        }
+         
+         
             
-        }   
+    }  } 
         
-    }
+    
     
     .bodyIndex{
        section{
            .review{
+               display: flex;
                flex-direction: row;
            }
        }
@@ -381,11 +383,11 @@ Footer{
     .servicios{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-around;}
         
   
 
-    }
+}
 
   
   

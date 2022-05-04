@@ -29,7 +29,10 @@ body{
 }
 
 header{
+    padding: 5px;
     .logoFrola{
+        margin: 5px;
+        padding: 5px;
         width: 300px;
     }
     background-color: map-get($map: $colores, $key:primario );
@@ -56,15 +59,15 @@ header{
             flex-direction: column;
             padding: 5px;
             margin: 5px;
-            background-color:#DEE1DF;
+            background-color: #DEE1DF;
             &:hover{
-                padding: 10px;
                 background-color: map-get($map: $colores, $key:primario );
-                font-size: 20px;
+                font-size: 10px;
            }
            a{
                text-decoration: none;
                color: black;
+               font-size: 1rem;
            }
        }
    }
@@ -105,6 +108,7 @@ Footer{
                         "review"
                         "fo";
     justify-content: center;
+    
     .mainIndex{
         padding: 30px;
         grid-area: mainindex;
@@ -136,37 +140,40 @@ Footer{
         }
     
     }
-    
-    .review{
-        grid-area: review;
-        display: flex;
-        flex-direction: column;
-        margin: 15px;
-        .reviewUno{
-            @include review;
-            grid-area: rU;
-        }
-          
-        .reviewDos{
-            @include review;
-            grid-area: rD;
-        }
-          
-        .reviewTres{
-            @include review;
-            grid-area: rT;
-        }
-          
-        .reviewCuatro{
-            @include review;
-            grid-area: rC;
-        }
-          
-        .reviewCinco{
-            @include review;
-            grid-area: rCi;
+    section{
+        .review{
+            grid-area: review;
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            
+            .reviewUno{
+                @include review;
+                grid-area: rU;
+            }
+              
+            .reviewDos{
+                @include review;
+                grid-area: rD;
+            }
+              
+            .reviewTres{
+                @include review;
+                grid-area: rT;
+            }
+              
+            .reviewCuatro{
+                @include review;
+                grid-area: rC;
+            }
+              
+            .reviewCinco{
+                @include review;
+                grid-area: rCi;
+            }
         }
     }
+    
 }
 
 .bodyServicios{
@@ -322,22 +329,49 @@ Footer{
 @media only screen and (min-width:1024px){
 
     .header{
-          h1{
+        display: flex;
+        h1{
           font-size: 50px;
         }
         .logoFrola{
             width: 150px;
         }
+        align-items: flex-end
+        }
+  
+        h4{
+        display: block;
+        }
+  
+        .menuInicial li{
+        display: inline;
+        flex-direction: column;
+        padding: 5px;
+        margin: 5px;
+        background-color:#DEE1DF;
+        &:hover{
+            padding: 10px;
+            background-color: map-get($map: $colores, $key:primario );
+            font-size: 20px;
+            }
+        a{
+         text-decoration: none;
+         color: black;
+         font-size: 1rem;
+         margin: 2px;
+         }
+            
+        }   
         
-
     }
-
     
     .bodyIndex{
-        .review {
-            display: flex;
-            flex-direction: row;
-        }
+       section{
+           .review{
+               flex-direction: row;
+           }
+       }
+        
     }
 
     .mainServicios{
@@ -350,23 +384,8 @@ Footer{
         justify-content: space-around;
         
   
+
     }
-  
-    .header{
-        align-items: flex-end
-      }
-  
-    h4{
-        display: block;
-    }
-  
-    .menuInicial li{
-        display: inline;
-        img{
-            width: 50px
-        }        
-    }
-  
-}
+
   
   
